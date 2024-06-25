@@ -1,1 +1,1 @@
-This was my assignment for my D277 Class (Front-End Web Development). We were tasked with creating a low level comprehensive page layout, then creating a more detailed one with clear ui elements and hierarchy and lastly create a multi page website based off the low level ones.
+This was my assignment for my D277 Class (Front-End Web Development). We were tasked with creating a low level comprehensive page layout, then creating a more detailed one with clear UI elements and hierarchy and lastly create a multi page website based off the low level ones.
