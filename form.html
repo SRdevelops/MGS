@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>More Information</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--JavaScript Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- CSS stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--scripts-->
+
+</head>
+<body class="page4">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/Milogo.png" alt="logo" class="milogo"> Michigan Government Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="lansing.html">Lansing</a></li>
+                            <li><a class="dropdown-item" href="annarbor.html">Ann Arbor</a></li>
+                            <li><a class="dropdown-item" href="grandrapids.html">Grand Rapids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--form main text-->
+    <section id="formmain">
+        <div class="row">
+            <div class="text-center">
+                <div class="centered-text">
+                    <h1>Looking for more Info?</h1>
+                    <p>
+                        Looking to make Michigan your home or thinking about stopping by? We've got you covered.
+                        We provide information about updates on events, activities and details about various
+                        cities in the Michigan area.We also answer specific questions you may have before you make the trip.
+                        There's a lot to see and do no matter which city you're traveling to, we
+                        look forward to hearing from you!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Form-->
+    <section id="inputform">
+        <div class="container">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="Firstname" class="form-label"><strong>First Name</strong></label>
+                    <input type="text" class="form-control form-control-lg" id="inputfname" placeholder="First name here" required />
+                </div>
+                <div class="col-md-6">
+                    <label for="Lastname" class="form-label"><strong>Last Name</strong></label>
+                    <input type="text" class="form-control form-control-lg" id="inputlname" placeholder="Last name here" required />
+                </div>
+                <div class="col-md-12">
+                    <label for="Emailaddress" class="form-label"><strong>Email Address</strong></label>
+                    <input type="email" class="form-control form-control-lg" id="inputemail" placeholder="Email here" required />
+                </div>
+                <div class="col-md-12">
+                    <label for="Emailaddress" class="form-label"><strong>Confirm Email Address</strong></label>
+                    <input type="email" class="form-control form-control-lg" id="confirmemail" placeholder="Email here" required />
+                </div>
+                <div class="col-md-12">
+                    <label for="additionalinfo" class="form-label"><strong>Questions for us</strong></label>
+                    <input type="text" class="form-control form-control-lg" id="inputinfo" placeholder="Anything you want to ask us?" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary btn-lg" value="Submit">Submit</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        // JavaScript code for form validation
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const emailInput1 = document.getElementById("inputemail");
+            const emailInput2 = document.getElementById("confirmemail");
+
+            form.addEventListener("submit", function (event) {
+                if (emailInput1.value !== emailInput2.value) {
+                    event.preventDefault(); // Prevent form submission
+                    alert("Email addresses do not match.");
+                }
+            });
+        });
+    </script>
+    <footer class="footer text-center">
+        <div class="text-center">
+            <ol>
+                <li><a class="text-decoration-none footlink" href="index.html">Home</a></li>
+                <li><a class="text-decoration-none footlink" href="form.html">Information</a></li>
+                <li><a class="text-decoration-none footlink" href="resources.html">Resources</a></li>
+                <li><a class="text-decoration-none footlink" href="lansing.html">Lansing</a></li>
+                <li><a class="text-decoration-none footlink" href="annarbor.html">Ann Arbor</a></li>
+                <li><a class="text-decoration-none footlink" href="grandrapids.html">Grand Rapids</a></li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>
