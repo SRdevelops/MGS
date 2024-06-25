@@ -1,0 +1,139 @@
+/* Body sections */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Accounting for supported font-family across browsers */
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+body.page1, body.page5 {
+    background-image: url('https://images.pexels.com/photos/702343/pexels-photo-702343.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    body.page2, body.page3, body.page4 {
+        background-color: aliceblue;
+    }
+
+.tablebg {
+    margin-top: 50px;
+    background: rgba(255,255,255,0.8);
+    margin-bottom: 100px;
+    flex-grow: 1;
+}
+
+/*
+body.page2 {
+    background-image: url('')
+}
+
+    body.page3 {
+        background-image: url('')
+    }
+
+      body.page4 {
+        background-image: url('')
+    }
+*/
+
+/*header items */
+
+.milogo {
+    max-width: 100px;
+    height: auto;
+    padding-bottom: 1%;
+}
+
+.nav-item {
+    font-size:1.5rem;
+}
+
+.navbar {
+    background-color: lightblue;
+}
+
+
+
+/* Main sections */
+
+p {
+    font-size: 1rem;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+#main {
+    margin-top: 100px;
+    flex-grow: 1;
+}
+
+    #main .btn {
+        position: relative;
+        top: 10px; 
+    }
+
+
+#formmain {
+    flex-grow: 1;
+    margin-top: 150px;
+}
+
+#inputform {
+    margin-bottom: 100px;
+    background: rgba(255,255,255,0);
+}
+
+#lansingmain, #annarbormain, #grandrapidsmain {
+    margin-top: 50px;
+}
+
+.homeimage {
+    margin-top: 50px;
+}
+
+.centered-text {
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* footer padding */
+
+.footer {
+    background-color: black;
+    display: block;
+    height: 260px;
+    padding: 20px;
+}
+
+.footlink:hover {
+    color: orange;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+.footlink {
+    color: white;
+}
+
+aside {
+   
+    background: rgba(255,255,255,0.8);
+   
+}
+
+
+.nav-item {
+    float: left;
+    margin-right: 50px;
+}
